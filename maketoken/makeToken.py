@@ -8,7 +8,7 @@ def parse_args():
     return sys.argv[1], sys.argv[2]
 
 
-def main():
+def run():
     file, target = parse_args()
     charType = chardet.detect(open(file, 'rb').read())
     print(charType)
@@ -18,7 +18,6 @@ def main():
             seg_list = jieba.cut(line)
             with open(target, 'a+', encoding='utf-8') as ff:
                	ff.write(' '.join(seg_list))
-    print('ok')
 
 if __name__ == '__main__':
-    main()
+    run()
