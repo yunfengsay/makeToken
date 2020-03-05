@@ -5,7 +5,7 @@ with open('README.md', 'r') as f:
 
 setuptools.setup(
     name='maketoken',
-    version='0.0.1',
+    version='0.0.2',
     author='flynn',
     author_email='fdoctor00@gmail.com',
     url='https://github.com/yunfengsay/makeToken',
