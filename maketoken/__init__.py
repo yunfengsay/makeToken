@@ -1,4 +1,4 @@
-from makeToken import run 
+from maketoken.makeToken import run 
 
 def maketoken():
     print('running')
