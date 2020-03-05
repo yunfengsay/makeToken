@@ -1,16 +1,18 @@
-#!/usr/bin/env python
-# coding: utf-8
+import setuptools
 
-from setuptools import setup
+with open('README.md', 'r') as f:
+    long_description = f.read()
 
-setup(
-    name='make_token',
+setuptools.setup(
+    name='maketoken',
     version='0.0.1',
     author='flynn',
     author_email='fdoctor00@gmail.com',
     url='https://github.com/yunfengsay/makeToken',
     description=u'分词工具, 把文件中的词分割成token',
-    packages=setuptools.find_packates(),
+    long_description=long_description,
+    long_description_content_type='text/markdown',
+    packages=setuptools.find_packages(),
     install_requires=[
             'jieba',
             'chardet'
