@@ -19,4 +19,6 @@ def main():
             with open(target, 'a+', encoding='utf-8') as ff:
                	ff.write(' '.join(seg_list))
     print('ok')
-main()
+
+if __name__ == '__main__':
+    main()
